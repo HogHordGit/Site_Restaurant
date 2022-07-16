@@ -6,9 +6,11 @@ body {
     margin: 0;
     font-size: 100%;
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 .wrapper {
+    box-shadow: 5px 5px 10px 5px grey;
     width: 1440px;
     margin: 0 auto;
 }
@@ -21,7 +23,7 @@ body {
 /* header styles */
 .header {
     background-image: url(../img/bg_header.png);
-    min-height: 100vh;
+    min-height: 85vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -215,6 +217,7 @@ body {
 
 .history {
     margin-top: 165px;
+    padding-bottom: 200px;
 }
 
 .history_title {
@@ -287,3 +290,48 @@ body {
     right: 40px;
 }
 
+/* Book table styles */
+.book_table {
+    background-image: url("../img/book_table_bg.png");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 80px 0px;
+}
+
+.left_title {
+    color: #D67E34;
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.left_text {
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.right_btn {
+    padding: 15px 20px;
+    background-color: #FF7400;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    transition: background-color 0.3s linear;
+}
+
+.book_table_holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right_btn:hover {
+    background-color: #b45304; ;
+}
