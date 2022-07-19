@@ -29,6 +29,30 @@ body {
     background-attachment: fixed;
 }
 
+.phone_ori_menu {
+    display: none;
+}
+
+.block {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.phone_ori_slide {
+    position: absolute;
+}
+
+.disp {
+    display: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
 .header_line {
     padding-top: 50px;
     display: flex;
@@ -609,10 +633,6 @@ body {
     margin-top: 100px;
 }
 
-.phone_menu {
-    display: none;
-}
-
 @media (max-width: 1300px) {
     .gallery_content {
         display: block;
@@ -687,9 +707,9 @@ body {
 }
 
 @media (max-width: 1185px) {
-    .phone_menu {
+    .phone_ori_menu {
         display: block;
-    }
+    } 
 
     .nav, .phone, .header_btn, .cart {
         display: none;
@@ -727,7 +747,6 @@ body {
     .header {
         min-height: 100vh;
     }
-
 }
 
 @media (max-width: 780px) {
