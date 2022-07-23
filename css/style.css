@@ -703,6 +703,7 @@ button {
 
     .cooker_img {
         margin-bottom: 30px;
+        max-width: 100%;
     }
 }
 
@@ -721,6 +722,10 @@ button {
     
     .pizza {
         display: none;
+    }
+
+    .header_down {
+        padding-bottom: 150px;
     }
 }
 
@@ -745,7 +750,7 @@ button {
     }
 
     .header {
-        min-height: 100vh;
+        min-height: 50vh;
     }
 }
 
@@ -780,7 +785,7 @@ button {
     }
 
     .header {
-        min-height: 100vh;
+        min-height: 50vh;
     }
 
     .number_item {
@@ -805,6 +810,14 @@ button {
 
     .dishes_title, .menu_title, .gallery_title, .cooker_title {
         font-size: 50px;
+    }
+
+    .lines_dishes {
+        display: none;
+    }
+
+    .header_btn_down {
+        font-size: 11px;
     }
 
 }
