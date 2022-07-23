@@ -160,7 +160,7 @@ button {
     content: "";
     background-color: #fff;
     top: 163px;
-    left: 87px;
+    left: 150px;
     margin-top: 12px;
 }
 
@@ -171,7 +171,7 @@ button {
     content: "";
     background-color: #fff;
     top: 163px;
-    left: 333px;
+    left: 420px;
     margin-top: 12px;
 }
 
@@ -223,7 +223,7 @@ button {
     box-shadow: 10px 10px 40px 20px #0000001A;
     margin-right: 30px;
     background-color: #fff;
-    margin-top: -125px;
+    margin-top: -60px;
     padding: 10px 10px;
 }
 
@@ -807,4 +807,10 @@ button {
         font-size: 50px;
     }
 
+}
+
+@media(max-height: 1000px) {
+    .header_title {
+        margin-top: 100px;
+    }
 }
