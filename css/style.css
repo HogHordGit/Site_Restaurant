@@ -22,7 +22,7 @@ body {
 /* header styles */
 .header {
     background-image: url(../img/bg/bg_header.png);
-    min-height: 85vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -130,7 +130,7 @@ button {
 .header_title {
     color: #D67E35;
     font-family: 'Tinos', serif;
-    font-size: 50px;
+    font-size: calc(27px + 23 * (100vw / 1440));
     font-weight: 400;
     text-align: center;
     position: absolute;
@@ -141,14 +141,14 @@ button {
 .header_subtitle {
     color: #D67E35;
     font-family: 'Tinos', serif;
-    font-size: 80px;
+    font-size: calc(37px + 43 * (100vw / 1440));
     font-weight: 400;
     margin-bottom: 12px;
 }
 
 .header_under_subtitle {
     color: #fff;
-    font-size: 18px;
+    font-size: calc(13px + 5 * (100vw / 1440));
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
@@ -179,7 +179,7 @@ button {
     background-color: #FF7400;
     color: #fff;
     padding: 15px 30px;
-    font-size: 14px;
+    font-size: calc(11px + 3 * (100vw / 1440));
     font-weight: 700;
     text-decoration: none;
     margin-top: 20px;
@@ -201,7 +201,7 @@ button {
 .card_desc {
     text-align: center;
     font-family: 'Tinos', serif;
-    font-size: 23px;
+    font-size: calc(19px + 4 * (100vw / 1440));
     font-weight: 400;
     color: #656363;
 }
@@ -213,7 +213,7 @@ button {
 .card_title {
     margin-bottom: 10px;
     font-family: 'Tinos', serif;
-    font-size: 23px;
+    font-size: calc(18px + 5 * (100vw / 1440));
     font-weight: 400;
     color: #2C2C2C;
 }
@@ -245,7 +245,7 @@ button {
 
 .history_title {
     font-family: 'Tinos', serif;
-    font-size: 54px;
+    font-size: calc(36px + 18 * (100vw / 1440));
     font-weight: 400;
     width: 440px;
     text-align: center;
@@ -268,13 +268,12 @@ button {
     width: 440px;
     justify-content: center;
     margin-top: 40px;
-    margin-left: 30px;
 }
 
 .number_item {
-    margin-right: 60px;
+    margin: 0px 30px;
     text-align: center;
-    font-size: 40px;
+    font-size: calc(30px + 10 * (100vw / 1440));
 }
 
 .number_item span {
@@ -327,7 +326,7 @@ button {
     font-family: 'Tinos';
     font-style: normal;
     font-weight: 400;
-    font-size: 52px;
+    font-size: calc(40px + 12 * (100vw / 1440));
     line-height: 60px;
     margin-bottom: 20px;
 }
@@ -336,7 +335,7 @@ button {
     color: #fff;
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: calc(18px + 6 * (100vw / 1440));
     line-height: 33px;
 }
 
@@ -366,7 +365,7 @@ button {
     font-family: 'Tinos';
     font-style: normal;
     font-weight: 400;
-    font-size: 54px;
+    font-size: calc(36px + 18 * (100vw / 1440));
     line-height: 62px;
     padding-top: 130px;
     margin-bottom: 140px;
@@ -395,7 +394,7 @@ button {
     font-family: 'Tinos';
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: calc(23px + 3 * (100vw / 1440));
     line-height: 30px;
     color: #000;
     margin-left: 30px;
@@ -426,9 +425,9 @@ button {
     font-family: 'Tinos';
     font-style: normal;
     font-weight: 400;
-    font-size: 54px;
+    font-size: calc(40px + 14 * (100vw / 1440));
     line-height: 62px;
-    color: rgb(26, 26, 26);
+    color: black;
     text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
     padding-top: 100px;
@@ -467,6 +466,7 @@ button {
 
 .menu_btn {
     background-color: #D67E34;
+    font-size: calc(13px + 3 * (100vw / 1440));
     padding: 15px 70px;
     text-decoration: none;
     color: #fff;
@@ -512,7 +512,7 @@ button {
     padding: 10px;
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
+    font-size: calc(10px + 3 * (100vw / 1440));
     line-height: 18px;
     color: #000;
 }
@@ -708,6 +708,10 @@ button {
 }
 
 @media (max-width: 1185px) {
+    .header {
+        min-height: 80vh;
+    }
+
     .phone_ori_menu {
         display: block;
     } 
@@ -740,21 +744,17 @@ button {
         padding-bottom: 20px;
     }
 
-    .header_subtitle {
-        font-size: 50px;
-    }
-
-    .header_title {
-        font-size: 40px;
-        margin-top: 100px;
-    }
-
     .header {
         min-height: 50vh;
     }
+
+    .header_title {
+        margin-top: 100px;
+    }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 767px) {
+
     .history_holder {
         display: block;
     }
@@ -771,59 +771,104 @@ button {
         margin: auto 40px;
     }
 
-    .header_subtitle {
-        font-size: 40px;
+    .header_title {
+        font-size: calc(27px + (23 + 23 * 0.7) * ((100vw - 320px) / 1440));
     }
 
-    .header_title {
-        font-size: 40px;
-        margin-top: 100px;
+    .header_subtitle {
+        font-size: calc(37px + (43 + 43 * 0.7) * ((100vw - 320px) / 1440));
     }
 
     .header_under_subtitle {
-        font-size: 15px;
+        font-size: calc(13px + (5 + 5 * 0.7) * ((100vw - 320px) / 1440));
     }
 
-    .header {
-        min-height: 50vh;
+    .header_btn_down_container {
+        margin-top: 20px;
+    }
+
+    .header_btn_down {
+        font-size: calc(11px + (3 + 3 * 0.7) * ((100vw - 320px) / 1440));
+        padding: 15px 20px;
+    }
+
+    .card_title {
+        font-size: calc(18px + (5 + 5 * 0.7) * ((100vw - 320px) / 1440));
+    }
+
+    .card_desc {
+        font-size: calc(19px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
+    }
+
+    .history_title, .dishes_title, .gallery_title, .cooker_title {
+        font-size: calc(36px + (18 + 18 * 0.7) * ((100vw - 320px) / 1440));
     }
 
     .number_item {
-        font-size: 25px;
+        margin: 0px 10px;
+        font-size: calc(30px + (10 + 10 * 0.7) * ((100vw - 320px) / 1440));
     }
 
-    .history_title {
-        font-size: 40px;
-    }
-
-    .number_item {
-        font-size: 25px;
+    .history {
+        margin-top: 70px;
+        padding-bottom: 90px;
     }
 
     .left_title {
-        font-size: 40px;
+        font-size: calc(40px + (12 + 12 * 0.7) * ((100vw - 320px) / 1440));
     }
 
     .left_text {
-        font-size: 20px;
+        font-size: calc(18px + (6 + 6 * 0.7) * ((100vw - 320px) / 1440));
     }
 
-    .dishes_title, .menu_title, .gallery_title, .cooker_title {
-        font-size: 50px;
+    .dishes_title {
+        padding-top: 60px;
+        margin-bottom: 50px;
     }
 
     .lines_dishes {
         display: none;
     }
 
-    .header_btn_down {
-        font-size: 11px;
+    .burger_text {
+        font-size: calc(23px + (3 + 3 * 0.7) * ((100vw - 320px) / 1440));
     }
 
-}
+    .menu {
+        margin-top: 20px;
+        padding-bottom: 40px;
+    }
 
-@media(max-height: 1000px) {
-    .header_title {
-        margin-top: 100px;
+    .menu_title {
+        font-size: calc(40px + (14 + 14 * 0.7) * ((100vw - 320px) / 1440));
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .block_recommended {
+        font-size: calc(10px + (3 + 3 * 0.7) * ((100vw - 320px) / 1440));
+    }
+
+    .menu_btn {
+        font-size: calc(13px + (3 + 3 * 0.7) * ((100vw - 320px) / 1440));
+        padding: 15px 60px;
+    }
+
+    .comment {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .gallery {
+        padding-top: 50px;
+    }
+
+    .cookers {
+        padding-top: 30px;
+    }
+
+    .cookers_content {
+        margin-top: 40px;
     }
 }
