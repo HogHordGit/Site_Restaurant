@@ -21,3 +21,23 @@ for (let anchor of anchors) {
         });
     });
 }
+
+//Скрипт для кнопки в меню
+const card1 = document.querySelector("#card_1");
+const card2 = document.querySelector("#card_2");
+const card3 = document.querySelector("#card_3");
+
+card1.addEventListener("click", (event) => {
+    card1.innerHTML = "У КОРЗИНІ";
+});
+
+card2.addEventListener("click", () => {
+    card2.innerHTML = "У КОРЗИНІ";
+});
+
+card3.addEventListener("click", () => {
+    card3.innerHTML = "У КОРЗИНІ";
+});
+
+
+
