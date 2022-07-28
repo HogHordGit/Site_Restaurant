@@ -1005,4 +1005,8 @@ button {
     .cookers_content {
         margin-top: 40px;
     }
+
+    .popup_content {
+        min-width: 300px;
+    }
 }
