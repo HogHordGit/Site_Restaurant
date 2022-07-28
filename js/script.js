@@ -9,7 +9,7 @@ btn.addEventListener("click", () => {
 });
 
 //Скрипт для якорей
-const anchors =document.querySelectorAll('a[href*="#"]');
+const anchors = document.querySelectorAll('a[href*="#menu_"]');
 
 for (let anchor of anchors) {
     anchor.addEventListener("click", (event) => {
