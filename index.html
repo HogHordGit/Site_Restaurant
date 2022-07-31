@@ -505,13 +505,28 @@
             <a href="#fixed" class="popup_close">X</a>
             <div class="popup_title">Заповніть форму <br>і ми вам передзвонимо</div>
             <div class="popup_text">
-                <input class="input_text" type="text" name="m_name" placeholder="Як Вас звати?" required />
-                <input class="input_text" type="text" name="m_phone" placeholder="Ваш номер телефону?" required />
+                <form action="#popup_after" method="post" id="formPhone" autocomplete="off">
+                    <input class="input_text" type="text" name="m_name" placeholder="Як Вас звати?" required />
+                    <input class="input_text art-stranger" type="number" name="m_phone" placeholder="Ваш номер телефону?" id="phone" required />
+
+                    <div class="input_button">
+                        <input class="input_btn" type="submit" value="Надіслати" />
+                    </div>
+
+                </form>
             </div>
 
-            <div class="input_button">
-                <input class="input_btn" type="submit" value="Надіслати">
-            </div>
+           
+        </div>
+    </div>
+</div>
+
+<div id="popup_after" class="popup">
+    <div class="popup_body">
+        <a href="#fixed" class="popup_area"></a>
+        <div class="popup_content">
+            <a href="#fixed" class="popup_close">X</a>
+            <div class="popup_title">Дякуємо! <br> Найближчим часом ми вам передзвонимо</div>
         </div>
     </div>
 </div>
