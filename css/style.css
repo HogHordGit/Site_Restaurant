@@ -277,7 +277,7 @@ button {
 }
 
 /* input styles */
-.input_text {
+.form_text {
     padding: 0 16px;
 	border:1px solid #ccc;
 	width:100%;
@@ -293,7 +293,12 @@ button {
 	-webkit-transition:all 0.3s ease-in-out;
 }
 
-.input_btn{
+.form_button_container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form_btn{
 	width:175px;
 	height:50px;
 	background: #fc7d15;
@@ -309,15 +314,10 @@ button {
 	-webkit-transition:all 0.3s ease-in-out;
 }
 
-.input_btn:hover {
+.form_btn:hover {
     background: #aa4d01;
+    cursor: pointer;
 }
-
-.input_button {
-    text-align: center;
-    margin-top: 30px;
-}
-
 
 /* content styles */
 /* card styles */
@@ -601,14 +601,15 @@ button {
     text-decoration: none;
     color: #fff;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-    transition: background-color 0.3s linear;
+    transition: background-color 0.2s linear;
+    cursor: pointer;
 }
 
 .menu_btn:hover {
     background-color: #c06f2d;
 }
 
-.menu_button {
+.menu_btn {
     margin-top: 30px;
 }
 
