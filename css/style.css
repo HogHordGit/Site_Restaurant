@@ -605,15 +605,11 @@ button {
     cursor: pointer;
 }
 
-.menu_button {
-    margin-top: 30px;
-}
-
 .menu_btn:hover {
     background-color: #c06f2d;
 }
 
-.menu_btn {
+.menu_button {
     margin-top: 30px;
 }
 
@@ -732,6 +728,11 @@ button {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+}
+
+.img_gallery {
+    max-width: 100%;
+    height: auto;
 }
 
 /* cookers styles */
@@ -1054,12 +1055,5 @@ button {
 
     .menu_card {
         max-width: 500px;
-    }
-}
-
-@media (max-width: 500px) {
-
-    .menu .container {
-        margin: 0px 0px;
     }
 }
